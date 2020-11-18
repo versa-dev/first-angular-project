@@ -11,7 +11,10 @@ export class HeroesComponent implements OnInit {
 
   heroes = HEROES;
 
-  selectedHero: Hero;
+  selectedHero: Hero = {
+    id: -1,
+    name: ''
+  };
 
   constructor() { }
 
